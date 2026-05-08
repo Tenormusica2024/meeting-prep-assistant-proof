@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mtg-001",
+    "title": "Implementation planning sync",
+    "meeting_type": "planning",
+    "starts_in_hours": 3,
+    "agenda": ["Confirm scope", "Review open risks", "Assign next actions"],
+    "open_questions": ["Which dependency should be handled first?"],
+    "context_notes": ["Prototype is ready for review", "Deployment timing is still flexible"],
+    "participants": ["project lead", "engineer", "reviewer"],
+    "needs_send_to_participants": false,
+    "needs_calendar_update": false,
+    "requires_confirmation": false
+  },
+  {
+    "id": "mtg-002",
+    "title": "Requirements clarification",
+    "meeting_type": "requirements",
+    "starts_in_hours": 5,
+    "agenda": [],
+    "open_questions": ["What is the acceptance criterion?", "Which workflow is out of scope?"],
+    "context_notes": ["Input has gaps and should be clarified before the call"],
+    "participants": ["requester", "facilitator"],
+    "needs_send_to_participants": false,
+    "needs_calendar_update": false,
+    "requires_confirmation": false
+  },
+  {
+    "id": "mtg-003",
+    "title": "Review packet handoff",
+    "meeting_type": "review",
+    "starts_in_hours": 8,
+    "agenda": ["Walk through review packet", "Decide approval path"],
+    "open_questions": [],
+    "context_notes": [],
+    "participants": ["reviewer", "owner"],
+    "needs_send_to_participants": true,
+    "needs_calendar_update": false,
+    "requires_confirmation": true
+  },
+  {
+    "id": "mtg-004",
+    "title": "Weekly optional check-in",
+    "meeting_type": "checkin",
+    "starts_in_hours": 72,
+    "agenda": ["Share updates if needed"],
+    "open_questions": [],
+    "context_notes": ["No urgent topic yet"],
+    "participants": ["team member"],
+    "needs_send_to_participants": false,
+    "needs_calendar_update": false,
+    "requires_confirmation": false
+  },
+  {
+    "id": "mtg-005",
+    "title": "Schedule conflict review",
+    "meeting_type": "scheduling",
+    "starts_in_hours": 2,
+    "agenda": ["Resolve time conflict"],
+    "open_questions": ["Should the meeting be moved?"],
+    "context_notes": ["Two sample events overlap"],
+    "participants": ["facilitator", "stakeholder"],
+    "needs_send_to_participants": false,
+    "needs_calendar_update": true,
+    "requires_confirmation": true
+  }
+]

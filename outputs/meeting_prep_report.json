@@ -1,0 +1,269 @@
+{
+  "summary": {
+    "meetings_scanned": 5,
+    "counts": {
+      "ready": 1,
+      "needs_agenda": 1,
+      "needs_confirmation": 2,
+      "send_later": 1
+    },
+    "brief_count": 5,
+    "confirmation_queue_count": 2,
+    "safety": "sample-first / no-participant-send / no-calendar-update / confirmation-required"
+  },
+  "items": [
+    {
+      "meeting": {
+        "id": "mtg-001",
+        "title": "Implementation planning sync",
+        "meeting_type": "planning",
+        "starts_in_hours": 3
+      },
+      "classification": {
+        "category": "ready",
+        "severity": "normal",
+        "reason": "agenda and context are ready for a draft brief",
+        "recommended_action": "use_brief_for_human_review",
+        "requires_external_action": false
+      },
+      "brief": {
+        "meeting_id": "mtg-001",
+        "title": "Brief: Implementation planning sync",
+        "draft_only": true,
+        "readiness": "ready",
+        "agenda": [
+          "Confirm scope",
+          "Review open risks",
+          "Assign next actions"
+        ],
+        "open_questions": [
+          "Which dependency should be handled first?"
+        ],
+        "context_notes": [
+          "Prototype is ready for review",
+          "Deployment timing is still flexible"
+        ],
+        "next_step": "use_brief_for_human_review"
+      }
+    },
+    {
+      "meeting": {
+        "id": "mtg-002",
+        "title": "Requirements clarification",
+        "meeting_type": "requirements",
+        "starts_in_hours": 5
+      },
+      "classification": {
+        "category": "needs_agenda",
+        "severity": "medium",
+        "reason": "agenda is missing",
+        "recommended_action": "add_agenda_before_meeting",
+        "requires_external_action": false
+      },
+      "brief": {
+        "meeting_id": "mtg-002",
+        "title": "Brief: Requirements clarification",
+        "draft_only": true,
+        "readiness": "needs_agenda",
+        "agenda": [],
+        "open_questions": [
+          "What is the acceptance criterion?",
+          "Which workflow is out of scope?"
+        ],
+        "context_notes": [
+          "Input has gaps and should be clarified before the call"
+        ],
+        "next_step": "add_agenda_before_meeting"
+      }
+    },
+    {
+      "meeting": {
+        "id": "mtg-003",
+        "title": "Review packet handoff",
+        "meeting_type": "review",
+        "starts_in_hours": 8
+      },
+      "classification": {
+        "category": "needs_confirmation",
+        "severity": "review",
+        "reason": "participant send or calendar change requires human confirmation",
+        "recommended_action": "review_brief_before_external_action",
+        "requires_external_action": true
+      },
+      "brief": {
+        "meeting_id": "mtg-003",
+        "title": "Brief: Review packet handoff",
+        "draft_only": true,
+        "readiness": "needs_confirmation",
+        "agenda": [
+          "Walk through review packet",
+          "Decide approval path"
+        ],
+        "open_questions": [],
+        "context_notes": [],
+        "next_step": "review_brief_before_external_action"
+      }
+    },
+    {
+      "meeting": {
+        "id": "mtg-004",
+        "title": "Weekly optional check-in",
+        "meeting_type": "checkin",
+        "starts_in_hours": 72
+      },
+      "classification": {
+        "category": "send_later",
+        "severity": "low",
+        "reason": "meeting is not close enough for final preparation",
+        "recommended_action": "revisit_closer_to_meeting",
+        "requires_external_action": false
+      },
+      "brief": {
+        "meeting_id": "mtg-004",
+        "title": "Brief: Weekly optional check-in",
+        "draft_only": true,
+        "readiness": "send_later",
+        "agenda": [
+          "Share updates if needed"
+        ],
+        "open_questions": [],
+        "context_notes": [
+          "No urgent topic yet"
+        ],
+        "next_step": "revisit_closer_to_meeting"
+      }
+    },
+    {
+      "meeting": {
+        "id": "mtg-005",
+        "title": "Schedule conflict review",
+        "meeting_type": "scheduling",
+        "starts_in_hours": 2
+      },
+      "classification": {
+        "category": "needs_confirmation",
+        "severity": "review",
+        "reason": "participant send or calendar change requires human confirmation",
+        "recommended_action": "review_brief_before_external_action",
+        "requires_external_action": true
+      },
+      "brief": {
+        "meeting_id": "mtg-005",
+        "title": "Brief: Schedule conflict review",
+        "draft_only": true,
+        "readiness": "needs_confirmation",
+        "agenda": [
+          "Resolve time conflict"
+        ],
+        "open_questions": [
+          "Should the meeting be moved?"
+        ],
+        "context_notes": [
+          "Two sample events overlap"
+        ],
+        "next_step": "review_brief_before_external_action"
+      }
+    }
+  ],
+  "briefs": [
+    {
+      "meeting_id": "mtg-001",
+      "title": "Brief: Implementation planning sync",
+      "draft_only": true,
+      "readiness": "ready",
+      "agenda": [
+        "Confirm scope",
+        "Review open risks",
+        "Assign next actions"
+      ],
+      "open_questions": [
+        "Which dependency should be handled first?"
+      ],
+      "context_notes": [
+        "Prototype is ready for review",
+        "Deployment timing is still flexible"
+      ],
+      "next_step": "use_brief_for_human_review"
+    },
+    {
+      "meeting_id": "mtg-002",
+      "title": "Brief: Requirements clarification",
+      "draft_only": true,
+      "readiness": "needs_agenda",
+      "agenda": [],
+      "open_questions": [
+        "What is the acceptance criterion?",
+        "Which workflow is out of scope?"
+      ],
+      "context_notes": [
+        "Input has gaps and should be clarified before the call"
+      ],
+      "next_step": "add_agenda_before_meeting"
+    },
+    {
+      "meeting_id": "mtg-003",
+      "title": "Brief: Review packet handoff",
+      "draft_only": true,
+      "readiness": "needs_confirmation",
+      "agenda": [
+        "Walk through review packet",
+        "Decide approval path"
+      ],
+      "open_questions": [],
+      "context_notes": [],
+      "next_step": "review_brief_before_external_action"
+    },
+    {
+      "meeting_id": "mtg-004",
+      "title": "Brief: Weekly optional check-in",
+      "draft_only": true,
+      "readiness": "send_later",
+      "agenda": [
+        "Share updates if needed"
+      ],
+      "open_questions": [],
+      "context_notes": [
+        "No urgent topic yet"
+      ],
+      "next_step": "revisit_closer_to_meeting"
+    },
+    {
+      "meeting_id": "mtg-005",
+      "title": "Brief: Schedule conflict review",
+      "draft_only": true,
+      "readiness": "needs_confirmation",
+      "agenda": [
+        "Resolve time conflict"
+      ],
+      "open_questions": [
+        "Should the meeting be moved?"
+      ],
+      "context_notes": [
+        "Two sample events overlap"
+      ],
+      "next_step": "review_brief_before_external_action"
+    }
+  ],
+  "confirmation_queue": [
+    {
+      "id": "confirm-mtg-003",
+      "title": "Review packet handoff",
+      "meeting_id": "mtg-003",
+      "recommended_action": "review_brief_before_external_action",
+      "reason": "participant send or calendar change requires human confirmation",
+      "brief_title": "Brief: Review packet handoff",
+      "side_effect_status": "not_executed",
+      "requires_human_review": true
+    },
+    {
+      "id": "confirm-mtg-005",
+      "title": "Schedule conflict review",
+      "meeting_id": "mtg-005",
+      "recommended_action": "review_brief_before_external_action",
+      "reason": "participant send or calendar change requires human confirmation",
+      "brief_title": "Brief: Schedule conflict review",
+      "side_effect_status": "not_executed",
+      "requires_human_review": true
+    }
+  ]
+}

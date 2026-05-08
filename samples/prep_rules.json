@@ -1,0 +1,5 @@
+{
+  "soon_hours_threshold": 24,
+  "send_later_hours_threshold": 48,
+  "safety": "sample-first / no-participant-send / no-calendar-update / confirmation-required"
+}
