@@ -2,6 +2,8 @@
 
 A public-safe proof slice for an AI secretary that turns sample meeting inputs into a pre-meeting brief without sending messages, editing calendars, or using private notes.
 
+![Meeting Prep Assistant Proof: sample meetings to brief and human confirmation](docs/assets/meeting-prep-assistant-proof-hero.png)
+
 ## One-minute summary
 
 This repository demonstrates a practical AI-secretary pattern:
